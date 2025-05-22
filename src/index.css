@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    @apply text-gray-800 bg-white;
+  }
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:border-purple-500;
+}
+
+.input-label {
+  @apply text-sm font-medium text-purple-600 mb-1;
+}
+
+.required-star {
+  @apply text-purple-600 ml-0.5;
+}
